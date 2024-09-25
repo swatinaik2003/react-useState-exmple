@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setTodos([...todos, input]);
-    setInput('');
+    setInput("");
   };
 
   return (
@@ -18,7 +18,7 @@ function TodoList() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button>Add Todo</button>
+        <button>Add</button>
       </form>
       <ul>
         {todos.map((todo, index) => (
@@ -29,5 +29,3 @@ function TodoList() {
   );
 }
 export default TodoList;
-
-
