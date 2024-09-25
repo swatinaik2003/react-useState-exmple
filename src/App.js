@@ -18,7 +18,7 @@ function TodoList() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button>Add todoList Application</button>
+        <button>Add Todo</button>
       </form>
       <ul>
         {todos.map((todo, index) => (
@@ -29,3 +29,5 @@ function TodoList() {
   );
 }
 export default TodoList;
+
+
