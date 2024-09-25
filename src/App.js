@@ -18,7 +18,7 @@ function TodoList() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button>Add todolist application</button>
+        <button>Add todoList application</button>
       </form>
       <ul>
         {todos.map((todo, index) => (
